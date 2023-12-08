@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
 import LeftSide from "../Home_Components/LeftSide";
+import MiddleNews from "../Home_Components/MiddleNews";
 import NavBar from "../Home_Components/NavBar";
 import RightSide from "../Home_Components/RightSide";
 
@@ -15,7 +15,7 @@ const Home = () => {
                 </div>
 
                 <div className="col-span-2">
-                    <Outlet></Outlet>
+                    <MiddleNews></MiddleNews>
                 </div>
 
                 <div>
