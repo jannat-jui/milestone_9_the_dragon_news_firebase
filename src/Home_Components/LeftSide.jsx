@@ -11,7 +11,7 @@ const LeftSide = () => {
     }, [])
 
     return (
-        <div className="w-[267px]">
+        <div className="w-[267px] pt-4">
             <h1 className="text-black text-[18]px font-bold leading-[30px]">All Category</h1>
             {leftdata.map(item =>
                 <div key={item.id} className="ml-7" >

@@ -15,7 +15,7 @@ const MiddleNews = () => {
         <div>
 
             {loadmiddleData?.map(item=>
-                <div key={item._id}>
+                <div key={item._id} className="p-6">
 
                 <div className="flex justify-between items-center bg-[#F3F3F3] p-[28px] ">
                     <div className="flex items-center gap-4">
@@ -41,7 +41,8 @@ const MiddleNews = () => {
                 <div className="p-[28px]">
                     <h1 className="text-black text-[20]px font-extrabold leading-[35px]">{item.title}</h1>
                     <img src={item.image_url} alt="" />
-                    <p className="text-black text-[16]px font-medium leading-[26px]"> {item.details}</p>
+                    <p className="text-black text-[16]px font-medium leading-[26px] mt-3"> {item.details.length>200 ? item.details.slice(0,200) + "..." : item.details}</p>
+                    <button className="btn my-4">Read More</button>
                     <hr />
                     <div>
                         <div className="flex items-center justify-between my-4">
