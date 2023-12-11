@@ -2,6 +2,7 @@ import { FaGoogle, FaGithub, FaFacebookSquare, FaTwitter, FaInstagram } from "re
 import pic1 from "../../public/assets/R1.jpg"
 import pic2 from "../../public/assets/R2.jpg"
 import pic3 from "../../public/assets/R3.jpg"
+import pic4 from "../../public/assets/RLast.jpg"
 
 
 const RightSide = () => {
@@ -34,7 +35,21 @@ const RightSide = () => {
                 <img src={pic2} alt="" />
                 <img src={pic3} alt="" />
             </div>
+
+            {/* Last part */}
+
+            <div className="AddvertiseBanner h-[509px] w-[304px] mt-6">
+
+                <h1 className="text-white text-[30px] text-center items-center pt-[65px] py-[40px] font-bold leading-[30px] h-[135px] w-[190px] mx-auto">Create an Amazing Newspaper</h1>
+                <p className="text-white text-[14px] text-center items-center pt-[65px] py-[40px] font-normal leading-[26px]  w-[190px] mx-auto">Discover thousands of options, easy to customize layouts, one-click to import demo and much more.</p>
+
+               <div className="text-center">
+               <button className="btn bg-red-600 w-36 mx-auto border-0">Learn More</button>
+               </div>
+            </div>
         </div>
+
+        
     );
 };
 
