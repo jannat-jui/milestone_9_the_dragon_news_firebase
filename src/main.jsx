@@ -9,6 +9,7 @@ import {
 import './index.css'
 import Main from './Main/Main';
 import Home from './Home/Home';
+import NewsDetails from './NewsDetails/NewsDetails';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+
+      {
+        path: "/newsDetails",
+        element: <NewsDetails></NewsDetails>
       }
     ]
   },

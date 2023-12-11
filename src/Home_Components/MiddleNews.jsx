@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const MiddleNews = () => {
 
@@ -42,7 +43,9 @@ const MiddleNews = () => {
                     <h1 className="text-black text-[20]px font-extrabold leading-[35px]">{item.title}</h1>
                     <img src={item.image_url} alt="" />
                     <p className="text-black text-[16]px font-medium leading-[26px] mt-3"> {item.details.length>200 ? item.details.slice(0,200) + "..." : item.details}</p>
-                    <button className="btn my-4">Read More</button>
+                    
+                   <Link to="/newsDetails"><button className="btn my-4">Read More</button></Link>
+
                     <hr />
                     <div>
                         <div className="flex items-center justify-between my-4">
